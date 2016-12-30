@@ -4,20 +4,27 @@
     <title>chrome-gpg-agent</title>
     </head>
     <body>
-        <form name="sign">
-            <textarea name="message">Message to sign...</textarea>
+        <form id="sign" name="sign">
+            <textarea name="message" id="signText">Message to sign...</textarea>
             <input type="submit" value="sign"/>
         </form>
 
-        <form name="encrypt">
-            <textarea name="message">Message to encrypt</textarea>
-            recipient: <input type="text" name="recipient" />
+        <form id="verify" name="verify">
+            <textarea name="message" id="verifyText">Message to verify...</textarea>
+            <input type="submit" value="verify"/>
+        </form>
+
+        <form id="encrypt" name="encrypt">
+            <textarea name="message" id="encText">Message to encrypt</textarea>
+            recipient: <input type="text" name="recipient" id="encRecip" />
             <input type="submit" value="encrypt" />
         </form>
 
-        <form name="decrypt">
-            <textarea name="message">Message to decrypt</textarea>
+        <form id="decrypt" name="decrypt">
+            <textarea name="message" id="decText">Message to decrypt</textarea>
             <input type="submit" value="decrypt" />
         </form>
+
+        <script type="text/javascript" src="popup.js"></script>
     </body>
 </html>
