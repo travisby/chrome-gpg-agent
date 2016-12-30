@@ -1,12 +1,13 @@
 {
     "manifest_version": 2,
     "name": "chrome-gpg-agent",
-    "version": "0.1",
+    "version": "0.2",
     "default_locale": "en",
     "description": "Communicate with gpg-agent",
     "author": "Travis Beatty <travisby@gmail.com>",
     "homepage_url": "https://github.com/travisby/chrome-gpg-agent",
     "browser_action": {
         "default_popup": "popup.html" 
-    }
+    },
+    "permissions": ["nativeMessaging"]
 }

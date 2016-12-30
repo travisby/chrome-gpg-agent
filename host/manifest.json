@@ -1,0 +1,7 @@
+{
+    "name": "io.linux_fu.chrome_gpg_agent",
+    "description": "Chrome GPG Agent Host",
+    "path": "/opt/chrome-gpg-agent/gpg-agent-passthrough.sh",
+    "type": "stdio",
+    "allowed_origins": ["chrome-extension://pclkdlodjahfokakfglabkgihpfejlfh/"]
+}
